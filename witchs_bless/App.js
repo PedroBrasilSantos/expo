@@ -7,8 +7,6 @@ import Image4 from "./assets/image4.jpeg";
 import Image5 from "./assets/image5.jpeg";
 import Image6 from "./assets/image6.jpg";
 
-
-
 const App = () => {
   const openWhatsApp = () => {
     const phoneNumber = "5551993741134"; // constante que segura o numero de contato
@@ -22,14 +20,13 @@ const App = () => {
 
   return (
     <ScrollView style={styles.container}>
-      <Text style={styles.header}>Bem-vindo Witch's Bless!</Text>
-
+      <Text style={styles.header} >WITCH'S BLESS</Text>
       <Text style={styles.subtitle} >Beneficions do Incenso</Text>
       <Text style={styles.description} >O incenso, elixir ancestral, transporta-nos para um reino de serenidade e espiritualidade.
       Seus aromas, como melodias sutis, acalmam a alma e purificam o ambiente, criando um espaço sagrado para a meditação e a conexão com o divino.
       Permita-se envolver por essa experiência sensorial e embarque numa jornada de autoconhecimento.</Text>
 
-      {/* Exibição das imagens com textos */}
+      {/* Exibição das imagens */}
       <View style={styles.imageContainer}>
         <View style={styles.imageBox}>
           <Image source={Image1} style={styles.image} />
@@ -72,26 +69,27 @@ const styles = StyleSheet.create({
     padding: 16,
   },
   header: {
-    fontSize: 24,
+    color: "#9999",
+    fontSize:30,
     fontWeight: "bold",
     textAlign: "center",
     marginBottom: 20,
   },
   subtitle: {
-    fontSize: 18, // Tamanho menor que o título
-    color: "#999", // Cor cinza suave para descrição
-    textAlign: "center", // Centralizado
-    marginBottom: 20, // Espaço após a descrição
-    lineHeight: 20, // Linha mais espaçada para melhor leitura
-    paddingHorizontal: 10, // Pequena margem lateral
+    fontSize: 18, 
+    color: "#999", 
+    textAlign: "center", 
+    marginBottom: 20, 
+    lineHeight: 20, 
+    paddingHorizontal: 10, 
   },
   description: {
-    fontSize: 14, // Tamanho menor que o título
-    color: "#999", // Cor cinza suave para descrição
-    textAlign: "center", // Centralizado
-    marginBottom: 20, // Espaço após a descrição
-    lineHeight: 20, // Linha mais espaçada para melhor leitura
-    paddingHorizontal: 10, // Pequena margem lateral
+    fontSize: 14, 
+    color: "#999",
+    textAlign: "center",
+    marginBottom: 20,
+    lineHeight: 20, 
+    paddingHorizontal: 10, 
   },
   imageContainer: {
     flexDirection: "row",
@@ -122,6 +120,10 @@ const styles = StyleSheet.create({
     paddingVertical: 15,
     borderRadius: 10,
     alignItems: "center",
+  },
+  logo: {
+    alignSelf: "center",
+    marginVertical: 20,
   },
   buttonText: {
     color: "#fff",
